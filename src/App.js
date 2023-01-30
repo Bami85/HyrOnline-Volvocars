@@ -16,6 +16,7 @@ import ContactUs from "./scenes/global/ContactUs";
 import { Button, Flex } from '@mantine/core';
 import { Link } from "react-router-dom";
 import Return from "./scenes/global/Return";
+import NotFound from "./scenes/global/NotFound";
 // import { Helmet } from 'react-helmet';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 
@@ -54,6 +55,7 @@ function App() {
       <ScrollToTop/>
       <Routes>
       <Route path="/" element={<Home />} />
+      <Route path="/NotFound" element={< NotFound/>} />
       <Route path="/Lasmer" element={<Lasmer />} />
       <Route path="/IntegritetPolicy" element={<IntegritetPolicy />} />
       <Route path="/ContactUs" element={<ContactUs />} />

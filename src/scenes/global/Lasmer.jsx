@@ -53,8 +53,8 @@ export default function ArticlesCardsGrid() {
   const cards = mockdata.map((article) => (
     <>
     <HelmetProvider>
-            <Helmet>
-        <title> Lasmer</title>
+        <Helmet>
+          <title> Lasmer</title>
         </Helmet> 
     </HelmetProvider>
     
