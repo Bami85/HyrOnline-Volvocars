@@ -1,5 +1,6 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
+// import { Helmet } from 'react-helmet';
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 import { createStyles, SimpleGrid, Card, Image, Text, Container, AspectRatio } from '@mantine/core';
 
@@ -51,9 +52,12 @@ export default function ArticlesCardsGrid() {
 
   const cards = mockdata.map((article) => (
     <>
-    <Helmet>
-    <title> Lasmer</title>
-    </Helmet>
+    <HelmetProvider>
+            <Helmet>
+        <title> Lasmer</title>
+        </Helmet> 
+    </HelmetProvider>
+    
     <Card key={article.title} p="md" radius="md"    mt={80} component="a" href="#" className={classes.card}>
       <AspectRatio ratio={1920 / 1080}>
         <Image src={article.image} />

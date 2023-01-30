@@ -1,7 +1,8 @@
 import React from 'react';
 import { SimpleGrid, Group, Title, Button,Text } from '@mantine/core';
 import { Link } from 'react-router-dom';
-import Helmet from "react-helmet";
+// import Helmet from "react-helmet";
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 
 const Return = () => {
@@ -11,9 +12,7 @@ const Return = () => {
   return (
     
     < >    
-     <Helmet>
-      <title> Retur & Reklamation</title>
-    </Helmet>
+     
          
       <Title
         mt={80}
@@ -25,6 +24,15 @@ const Return = () => {
         align="center"
       >
          Retur & Reklamation
+         <HelmetProvider>
+
+          <Helmet>
+          <title> Retur & Reklamation</title>
+         </Helmet>
+
+</HelmetProvider>
+
+
       </Title>
     
     
