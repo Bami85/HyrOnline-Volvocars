@@ -1,6 +1,7 @@
 import { createStyles, Image, Container, Title, Text, Button, SimpleGrid } from '@mantine/core';
 import image from '../../assets/c40.png';
 import {Link} from "react-router-dom";
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 const useStyles = createStyles((theme) => ({
   root: {
