@@ -97,7 +97,7 @@ export default function Confirmation() {
   const { classes } = useStyles();
   return (
     <div>
-      <Container>
+      <Container mt={80} ml={320} mr={320}>
         <div className={classes.inner}>
           <div className={classes.content}>
             <Title className={classes.title}>
@@ -105,6 +105,7 @@ export default function Confirmation() {
             </Title>
   
             <List
+              
               mt={30}
               spacing="sm"
               size="sm"
@@ -136,7 +137,7 @@ export default function Confirmation() {
               </Button>
               </Link>
               <Link to ="/">
-              <Button variant="default" radius="xl" size="md" className={classes.control}>
+              <Button variant= "default" radius="xl" size="md" className={classes.control}>
               Förtsätta hyra på Hyr Online | VolvoCars
               </Button>
               </Link>
