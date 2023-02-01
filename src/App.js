@@ -55,6 +55,7 @@ function App() {
       <ScrollToTop/>
       <Routes>
       <Route path="/" element={<Home />} />
+    
       <Route path="*" element={< NotFound/>} />
       <Route path="/Lasmer" element={<Lasmer />} />
       <Route path="/IntegritetPolicy" element={<IntegritetPolicy />} />
