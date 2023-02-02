@@ -53,7 +53,7 @@ export default function NotFound() {
       <SimpleGrid align="center" mt={80} mb="250px">
         <Image src={image} className={classes.mobileImage} />
         <div>
-          <Title className={classes.title}>Page not found error 405</Title>
+          <Title className={classes.title}>Page not found error 404</Title>
           <Text  color="dimmed" size="lg">
          
             Page you are trying to open does not exist. You may have mistyped the address, or the
