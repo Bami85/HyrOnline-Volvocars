@@ -68,7 +68,7 @@ function App() {
 
 
         <Paper radius="md" shadow="md">
-        <CookieConsent buttonText={"Acceptera alla cookies" } debug={true} style={{background:'#0C8599',textAlign:'left'}} buttonStyle={{color:'#000', background:"#fff"}}>
+        <CookieConsent buttonText={"Acceptera alla cookies" }  debug={true} style={{background:'#0C8599',textAlign:'left'}} buttonStyle={{color:'#000', background:"#fff"}}>
           
               <Text color="white" size="xs" >
               När du besöker vår webbplats använder vi cookies för att se till att du besöker en fake webbplats. Dessa cookies kan handla om dig, dina preferenser eller din enhet.Så vi tar inte ansvar ifall man lägga till credit kort eller gör en köp. Det är bara en fake webbsite där vi lära oss hur man bygger upp en webbshop.
